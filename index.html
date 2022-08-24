@@ -167,7 +167,7 @@
 			}
 
 			#peopleMeet .owl-item{
-				width: 310.3px!important;
+				width: 210.3px!important;
 			}
 			#peopleMeet .owl-prev{
 				position: absolute;
@@ -215,7 +215,7 @@
 			}
 
 
-			@media (max-width:575px) { 
+			@media (max-width:575px) and (max-width:850px){ 
 				.second-heading{
 					font-size: 1.5rem;
 					font-weight: 600;
@@ -314,231 +314,277 @@
 				}
 			}
 			/*	for tab and more than devices	*/			
-			@media (min-width: 768px) { 
-
+			@media (max-width:896px) { 
 				#peopleMeet .owl-item{
 					width:286.3px!important;
 					margin: 40px!important;
 				}
-			}
-
-			@media (min-width: 1400px) { 
-				.cus-margin-top {
-					margin-top: 26rem!important;
+				.backImage{
+					background-image: url('./img/bannerbg.png');
+					max-width: 100%;
+	 				height: auto;
+					background-size: cover;
+					background-position: center;
+					left: 0;
+					object-fit: cover;
+					}
+					.cus-position {
+						left: 20%!important;
+						top: 28% !important;
+					}
+					.para {
+						margin-right: 0rem; 
+					}
+					.para2{
+						margin-left: 0rem;
+						margin-right: 0rem;
+					}
+					.mail-dim {
+						width: 5rem;
+  					height: 5rem;
+					}
+					.second-heading {
+					    font-size: 1.2rem!important;
+					    font-weight: 700;
+					}
+					.third-heading {
+					    font-size: 2.5rem;
+					    font-weight: 700;
+					}
+					.message {
+					    right: 26%!important;
+					}
+					#peopleMeet .owl-prev {
+					    position: absolute;
+					    left: -4%;
+					    top: 34%;
+					}
+					#peopleMeet .owl-next {
+					    position: absolute;
+					    right: -4%;
+					    top: 34%;
+					}
 				}
-			}
-			
-		</style>
 
-		<!-- Navbar start from here  -->
-		<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white shadow-sm bg-light pb-0">
-			<div class="container-fluid my-3">
-				<a class="navbar-brand" href="#">
-					<img src="./img/redesLogo.png" alt="" class="logo-image ms-md-5">
-				</a>	
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-						<li class="nav-item nav-font d-flex">
-							<a class="nav-link ps-3" aria-current="page" href="#">Home </a><span class="px-2 border-right-cus"></span>
-						</li>
-						<li class="nav-item nav-font d-flex">
-							<a class="nav-link ps-3" href="#">Login</a><span class="px-2 border-right-cus"></span>
-						</li>
-						<li class="nav-item nav-font d-flex">
-							<a class="nav-link ps-3" href="#">Sign up</a><span class="px-2  border-right-cus" ></span>
-						</li>
-						<li class="nav-item d-none d-md-block ">
-							<img src="./img/globe.png" alt=""  class="px-3 mt-2">
-						</li>
+				@media (min-width: 1400px) { 
+					.cus-margin-top {
+						margin-top: 26rem!important;
+					}
+				}
 
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- Navbar ends here -->
+			</style>
 
-		<!-- home main page end here -->
-		<div class="container-fluid p-0 jumbotron backImage">
-			<div class="row mb-3 p-5 mx-0">
-				<div class="col-md-8 position-relative order-1">
-					<div class="position-absolute top-50 start-50 cus-position" >
-						<h1 class="third-heading text-white">Welcome to Your</h1>
-						<p class="third-heading text-white"> Professional Fratenity !</p>
+			<!-- Navbar start from here  -->
+			<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white shadow-sm bg-light pb-0">
+				<div class="container-fluid my-3">
+					<a class="navbar-brand" href="#">
+						<img src="./img/redesLogo.png" alt="" class="logo-image ms-md-5">
+					</a>	
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item nav-font d-flex">
+								<a class="nav-link ps-3" aria-current="page" href="#">Home </a><span class="px-2 border-right-cus"></span>
+							</li>
+							<li class="nav-item nav-font d-flex">
+								<a class="nav-link ps-3" href="#">Login</a><span class="px-2 border-right-cus"></span>
+							</li>
+							<li class="nav-item nav-font d-flex">
+								<a class="nav-link ps-3" href="#">Sign up</a><span class="px-2  border-right-cus" ></span>
+							</li>
+							<li class="nav-item d-none d-md-block ">
+								<img src="./img/globe.png" alt=""  class="px-3 mt-2">
+							</li>
+
+						</ul>
 					</div>
 				</div>
-				<div class="col-md-4 position-relative ps-md-5 order-2">
-					<p class="second-heading mobile-color fw-bold p-3 my-md-3 para2">Where Professionals People Network & Grow</p>
-					<p class="my-4 ms-md-5 para ">Explore opportunites and business parnterships at Redes. Nurture Win Win partnerships , meet Peers , Investors , Advisors , Founders .</p>
-					<button type="button" class="ms-5 btn bg-main px-5 text-white round ">Signup</button>
-					<p class="m-5">Already have an account ? <span class="fw-bold">Login</span></p>
-				</div>
-				
+			</nav>
+			<!-- Navbar ends here -->
 
-			</div>
-			
-
-		</div>
-		<div class="pt-md-5 pt-3">
-			<hr class="p-0 m-0" style="opacity:0.1!important;">
-		</div>
-		<!-- home first page end here -->
-
-
-
-		
-		<!-- companyLogo start from here -->
-		<div class="container-fluid mt-3 mb-5">
-			<div class="row">
-				<div class="com-md-12 text-center my-3">
-					<p class="h3 fw-bold">Trusted by <span class="text-pink"> Members </span> from</p>
-				</div>
-				<div class="col-md-12"> 
-					<div class="owl-carousel owl-theme position-relative" id="companyLogo">
-						<div class="item d-flex">
-							<img src="./img/client--logo-1.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
-						</div>
-						<div class="item d-flex">
-							<img src="./img/client--logo-2.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
-						</div>
-						<div class="item d-flex">
-							<img src="./img/client--logo-3.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
-						</div>
-						<div class="item d-flex">
-							<img src="./img/client--logo-4.png" alt="company-logo" class="m-0 client-logo"><span class="px-2 border-right-cus"></span>
-						</div>
-						<div class="item d-flex">
-							<img src="./img/client--logo-5.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
-						</div>
-						<div class="item d-flex">
-							<img src="./img/client--logo-6.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
-						</div>
-						<div class="item d-flex">
-							<img src="./img/client--logo-7.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
+			<!-- home main page end here -->
+			<div class="container-fluid p-0 jumbotron backImage">
+				<div class="row mb-3 p-5 mx-0">
+					<div class="col-md-8 position-relative order-1">
+						<div class="position-absolute top-50 start-50 cus-position" >
+							<h1 class="third-heading text-white">Welcome to Your</h1>
+							<p class="third-heading text-white"> Professional Fratenity !</p>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<!-- companyLogo end from here -->
+					<div class="col-md-4 position-relative ps-md-5 order-2">
+						<p class="second-heading mobile-color fw-bold p-3 my-md-3 para2">Where Professionals People Network & Grow</p>
+						<p class="my-4 ms-md-5 para ">Explore opportunites and business parnterships at Redes. Nurture Win Win partnerships , meet Peers , Investors , Advisors , Founders .</p>
+						<button type="button" class="ms-5 btn bg-main px-5 text-white round ">Signup</button>
+						<p class="m-5">Already have an account ? <span class="fw-bold">Login</span></p>
+					</div>
 
-		<!-- companyInvestor start from here -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12 p-0 mt-2">
-					<div class="owl-carousel owl-theme position-relative" id="companyInvestor">
-						<div class="item text-center bg-main p-4 mt-2">
-							<p class="second-heading text-white fw-bold">Build SUPERCONNECTIONS ! </p>
-							<p class="text-white fw-bold my-4">Connect 1:1 with anyone in the community and build a network that you can leverage</p>
-							<div class="text-white fw-bold text-center">
-								<ul class="list-unstyled text-primary">
-									<li class="list-inline-item investorli first-heading px-2">Investor</li>
-									<li class="list-inline-item investorli first-heading px-2">Entrepreneurs</li>
-									<li class="list-inline-item investorli first-heading px-2">CXOs</li>
-									<li class="list-inline-item investorli first-heading px-2">Founders</li>
-									<li class="list-inline-item investorli first-heading px-2">Engineers</li>
-									<li class="list-inline-item investorli first-heading px-2">Product Managers</li>
-									<li class="list-inline-item investorli first-heading px-2">Engineers</li>
-								</ul>
+
+				</div>
+
+
+			</div>
+			<div class="pt-md-5 pt-3">
+				<hr class="p-0 m-0" style="opacity:0.1!important;">
+			</div>
+			<!-- home first page end here -->
+
+
+
+
+			<!-- companyLogo start from here -->
+			<div class="container-fluid mt-3 mb-5">
+				<div class="row">
+					<div class="com-md-12 text-center my-3">
+						<p class="h3 fw-bold">Trusted by <span class="text-pink"> Members </span> from</p>
+					</div>
+					<div class="col-md-12"> 
+						<div class="owl-carousel owl-theme position-relative" id="companyLogo">
+							<div class="item d-flex">
+								<img src="./img/client--logo-1.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
 							</div>
-						</div>
-						<div class="item  text-center bg-main p-4 mt-2">
-							<p class="second-heading text-white fw-bold">Build SUPERCONNECTIONS ! </p>
-							<p class="text-white fw-bold my-4">Connect 1:1 with anyone in the community and build a network that you can leverage</p>
-							<div class="text-white  fw-bold text-center">
-								<ul class="list-unstyled text-primary">
-									<li class="list-inline-item investorli first-heading px-2">Investor</li>
-									<li class="list-inline-item investorli first-heading px-2">Entrepreneurs</li>
-									<li class="list-inline-item investorli first-heading px-2">CXOs</li>
-									<li class="list-inline-item investorli first-heading px-2">Founders</li>
-									<li class="list-inline-item investorli first-heading px-2">Engineers</li>
-									<li class="list-inline-item investorli first-heading px-2">Product Managers</li>
-									<li class="list-inline-item investorli first-heading px-2">Engineers</li>
-								</ul>
+							<div class="item d-flex">
+								<img src="./img/client--logo-2.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
 							</div>
-						</div>
-						<div class="item  text-center bg-main p-4 mt-2">
-							<p class="second-heading text-white fw-bold">Build SUPERCONNECTIONS ! </p>
-							<p class="text-white fw-bold my-4">Connect 1:1 with anyone in the community and build a network that you can leverage</p>
-							<div class="text-white  fw-bold text-center">
-								<ul class="list-unstyled text-primary">
-									<li class="list-inline-item investorli first-heading px-2">Investor</li>
-									<li class="list-inline-item investorli first-heading px-2">Entrepreneurs</li>
-									<li class="list-inline-item investorli first-heading px-2">CXOs</li>
-									<li class="list-inline-item investorli first-heading px-2">Founders</li>
-									<li class="list-inline-item investorli first-heading px-2">Engineers</li>
-									<li class="list-inline-item investorli first-heading px-2">Product Managers</li>
-									<li class="list-inline-item investorli first-heading px-2">Engineers</li>
-								</ul>
+							<div class="item d-flex">
+								<img src="./img/client--logo-3.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
+							</div>
+							<div class="item d-flex">
+								<img src="./img/client--logo-4.png" alt="company-logo" class="m-0 client-logo"><span class="px-2 border-right-cus"></span>
+							</div>
+							<div class="item d-flex">
+								<img src="./img/client--logo-5.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
+							</div>
+							<div class="item d-flex">
+								<img src="./img/client--logo-6.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
+							</div>
+							<div class="item d-flex">
+								<img src="./img/client--logo-7.png" alt="company-logo" class=" m-0 client-logo"><span class="px-2 border-right-cus"></span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- companyInvestor end from here -->
+			<!-- companyLogo end from here -->
 
-		<!-- Redes deatil page start here -->
-		<section>
-			<div class="container-fluid cus-gray mb-md-5 py-4">
-				<div class="row p-3 p-md-2">
-					<div class="col-md-6 col-12 mb-md-5" id="redesDetail">
-						<div class="ridesHeading ms-5 my-md-5 py-md-5 margin-cus-left">
-							<p class=" third-heading main-text cust-bold">WHY JOIN</p>
-							<h2 class="third-heading main-text cust-bold">REDES?</h2>
-							<p class="pt-3 headingPara text-gray-dark">Discover thousands of relevant
-								<p class="headingPara text-gray-dark">connects curated to your personal</p>
-								<p class="headingPara text-gray-dark">goals, across the world.</p>
+			<!-- companyInvestor start from here -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 p-0 mt-2">
+						<div class="owl-carousel owl-theme position-relative" id="companyInvestor">
+							<div class="item text-center bg-main p-4 mt-2">
+								<p class="second-heading text-white fw-bold">Build SUPERCONNECTIONS ! </p>
+								<p class="text-white fw-bold my-4">Connect 1:1 with anyone in the community and build a network that you can leverage</p>
+								<div class="text-white fw-bold text-center">
+									<ul class="list-unstyled text-primary">
+										<li class="list-inline-item investorli first-heading px-2">Investor</li>
+										<li class="list-inline-item investorli first-heading px-2">Entrepreneurs</li>
+										<li class="list-inline-item investorli first-heading px-2">CXOs</li>
+										<li class="list-inline-item investorli first-heading px-2">Founders</li>
+										<li class="list-inline-item investorli first-heading px-2">Engineers</li>
+										<li class="list-inline-item investorli first-heading px-2">Product Managers</li>
+										<li class="list-inline-item investorli first-heading px-2">Engineers</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-6 position-relative">
-							<div class="position-absolute top-0 end-0 pb-lg-5">
-								<img src="./img/section4bg.png" class="img-fluid">
+							<div class="item  text-center bg-main p-4 mt-2">
+								<p class="second-heading text-white fw-bold">Build SUPERCONNECTIONS ! </p>
+								<p class="text-white fw-bold my-4">Connect 1:1 with anyone in the community and build a network that you can leverage</p>
+								<div class="text-white  fw-bold text-center">
+									<ul class="list-unstyled text-primary">
+										<li class="list-inline-item investorli first-heading px-2">Investor</li>
+										<li class="list-inline-item investorli first-heading px-2">Entrepreneurs</li>
+										<li class="list-inline-item investorli first-heading px-2">CXOs</li>
+										<li class="list-inline-item investorli first-heading px-2">Founders</li>
+										<li class="list-inline-item investorli first-heading px-2">Engineers</li>
+										<li class="list-inline-item investorli first-heading px-2">Product Managers</li>
+										<li class="list-inline-item investorli first-heading px-2">Engineers</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item  text-center bg-main p-4 mt-2">
+								<p class="second-heading text-white fw-bold">Build SUPERCONNECTIONS ! </p>
+								<p class="text-white fw-bold my-4">Connect 1:1 with anyone in the community and build a network that you can leverage</p>
+								<div class="text-white  fw-bold text-center">
+									<ul class="list-unstyled text-primary">
+										<li class="list-inline-item investorli first-heading px-2">Investor</li>
+										<li class="list-inline-item investorli first-heading px-2">Entrepreneurs</li>
+										<li class="list-inline-item investorli first-heading px-2">CXOs</li>
+										<li class="list-inline-item investorli first-heading px-2">Founders</li>
+										<li class="list-inline-item investorli first-heading px-2">Engineers</li>
+										<li class="list-inline-item investorli first-heading px-2">Product Managers</li>
+										<li class="list-inline-item investorli first-heading px-2">Engineers</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- Redes deatil page end here -->
+			</div>
+			<!-- companyInvestor end from here -->
 
-			<!-- Redes work page start here -->
+			<!-- Redes deatil page start here -->
 			<section>
-				<div class="container-fluid mt-5 cus-margin-top">
-					<div class="row bg-main p-md-5 p-2">
-						<div class="col-md-12 text-center text-white">
-							<p class="third-heading cust-bold my-5">HOW REDES WORKS?</p>
-						</div>
-						<div class="col-md-4 col-12 d-flex p-4">
-							<img src="./img/Icon-16.png" class="mail-dim p-3 mt-1">
-							<img src="./img/Icon-19.png" class="img-fluid h-50 mt-2">
-							<div class="content text-white ms-3 ">
-								<p class="second-heading mb-0">Request</p>
-								<p class="text-primary second-heading mb-0">Access <span class="text-white"> to join</span></p>
-								<p class="second-heading mb-0">Request</p>
-								<p class="text-white first-heading">Our team vets the profile and sends a personalised invite once your profile is approved</p>
+				<div class="container-fluid cus-gray mb-md-5 py-4">
+					<div class="row p-3 p-md-2">
+						<div class="col-md-6 col-12 mb-md-5" id="redesDetail">
+							<div class="ridesHeading ms-5 my-md-5 py-md-5 margin-cus-left">
+								<p class=" third-heading main-text cust-bold">WHY JOIN</p>
+								<h2 class="third-heading main-text cust-bold">REDES?</h2>
+								<p class="pt-3 headingPara text-gray-dark">Discover thousands of relevant
+									<p class="headingPara text-gray-dark">connects curated to your personal</p>
+									<p class="headingPara text-gray-dark">goals, across the world.</p>
+								</div>
+							</div>
+							<div class="col-md-6 position-relative">
+								<div class="position-absolute top-0 end-0 pb-lg-5">
+									<img src="./img/section4bg.png" class="img-fluid">
+								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-12 d-flex p-4">
-							<img src="./img/Icon-17.png" class="mail-dim p-3 mt-1">
-							<img src="./img/Icon-19.png" class="img-fluid h-50 mt-2">
-							<div class="content ms-3 second-heading text-white">
-								<p class="second-heading mb-0">Meeting <span class="text-primary">Relevant</span></p>
-								<p class="second-heading mb-0">Connections</p>
-								<p class="second-heading mb-0">every week</p>
-								<p class="text-white first-heading">Based on your professional Goals interact with relevant communities</p>
-							</div>
+					</div>
+				</section>
+				<!-- Redes deatil page end here -->
 
-						</div>
-						<div class="col-md-4 col-12 d-flex p-4">
-							<img src="./img/Icon-18.png" class="mail-dim p-3 mt-1">
-							<img src="./img/Icon-19.png" class="img-fluid h-50 mt-2">
-							<div class="content ms-3 text-white">
-								<p class="second-heading mb-0">Find the <span class="text-pink"> right</span></p>
-								<p class="second-heading mb-0 text-pink">candidates <span class="text-white">&</span></p>
-								<p class="second-heading mb-0">Jobs</p>
-								<p class="text-white first-heading">Interact with & Hire the right talent for your organization.</p>
+				<!-- Redes work page start here -->
+				<section>
+					<div class="container-fluid mt-5 cus-margin-top">
+						<div class="row bg-main p-md-5 p-2">
+							<div class="col-md-12 text-center text-white">
+								<p class="third-heading cust-bold my-5">HOW REDES WORKS?</p>
+							</div>
+							<div class="row"></div>
+							<div class="col-md-4 col-12 d-flex p-4">
+								<img src="./img/Icon-16.png" class="mail-dim p-3 mt-1">
+								<img src="./img/Icon-19.png" class="img-fluid h-50 mt-2">
+								<div class="content text-white ms-3 ">
+									<p class="second-heading mb-0">Request</p>
+									<p class="text-primary second-heading mb-0">Access <span class="text-white"> to join</span></p>
+									<p class="second-heading mb-0">Request</p>
+									<p class="text-white first-heading">Our team vets the profile and sends a personalised invite once your profile is approved</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-12 d-flex p-4">
+								<img src="./img/Icon-17.png" class="mail-dim p-3 mt-1">
+								<img src="./img/Icon-19.png" class="img-fluid h-50 mt-2">
+								<div class="content ms-3 second-heading text-white">
+									<p class="second-heading mb-0">Meeting <span class="text-primary">Relevant</span></p>
+									<p class="second-heading mb-0">Connections</p>
+									<p class="second-heading mb-0">every week</p>
+									<p class="text-white first-heading">Based on your professional Goals interact with relevant communities</p>
+								</div>
+
+							</div>
+							<div class="col-md-4 col-12 d-flex p-4">
+								<img src="./img/Icon-18.png" class="mail-dim p-3 mt-1">
+								<img src="./img/Icon-19.png" class="img-fluid h-50 mt-2">
+								<div class="content ms-3 text-white">
+									<p class="second-heading mb-0">Find the <span class="text-pink"> right</span></p>
+									<p class="second-heading mb-0 text-pink">candidates <span class="text-white">&</span></p>
+									<p class="second-heading mb-0">Jobs</p>
+									<p class="text-white first-heading">Interact with & Hire the right talent for your organization.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -557,36 +603,36 @@
 						<div class="col-md-12 mt-md-5">
 							<div class="owl-carousel owl-theme position-relative" id="peopleMeet" >
 								<div class="item">
-									<img src="./img/pix.png" alt="founder" class="w-75">
-									<div class=" my-4">
-										<p class=" h5 fw-bold main-text"> Altaf  Dhamani</p>
+									<img src="./img/pix.png" alt="founder" class="img-fluid">
+									<div class="my-4 text-center">
+										<p class="h5 fw-bold main-text"> Altaf  Dhamani</p>
 										<p class="text-muted">Co-Founder, Travestop</p>
 									</div>
 								</div>
 								<div class="item">
-									<img src="./img/pix-1.png" alt="founder" class="w-75">
-									<div class=" my-4">
+									<img src="./img/pix-1.png" alt="founder" class="img-fluid">
+									<div class="my-3 text-center">
 										<p class="main-text h5 fw-bold"> Dharmaveer Singh</p>
 										<p class="text-muted"> CEO-Zostel</p>
 									</div>
 								</div>
 								<div class="item">
-									<img src="./img/pix-2.png" alt="founder" class="w-75">
-									<div class=" my-4">
+									<img src="./img/pix-2.png" alt="founder" class="img-fluid">
+									<div class=" my-4 text-center">
 										<p class="main-text h5 fw-bold"> Antonio Mazza</p>
 										<p class="text-muted">Co-Founder, WeNetwork</p>
 									</div>
 								</div>
 								<div class="item">
-									<img src="./img/pix-3.png" alt="founder" class="w-75">
-									<div class="my-4">
+									<img src="./img/pix-3.png" alt="founder" class="img-fluid">
+									<div class="my-4 text-center">
 										<p class="main-text h5 fw-bold"> Gaurav Ranja</p>
 										<p class="text-muted">Investor, Prime Venture</p>
 									</div>
 								</div>
 								<div class="item">
-									<img src="./img/member.png" alt="founder" class="rounded-circle w-75">
-									<div class=" my-4">
+									<img src="./img/member.png" alt="founder" class="img-fluid rounded-circle">
+									<div class=" my-4 text-center">
 										<p class="main-text h5 fw-bold"> Gaurav Ranja</p>
 										<p class="text-muted">Investor, Prime Venture</p>
 									</div>
@@ -787,7 +833,7 @@
 
 								$('#peopleMeet').owlCarousel({
 									loop:true,
-									margin:60,
+									margin:125,
 									nav:true,
 									dots:false,
 									autoplay: false,
